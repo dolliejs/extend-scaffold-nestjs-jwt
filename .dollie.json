@@ -1,0 +1,26 @@
+{
+  "questions": [
+    {
+      "type": "input",
+      "name": "jwtSecret",
+      "message": "Enter the JWT secret phase",
+      "default": "jwt-secret"
+    },
+    {
+      "type": "input",
+      "name": "jwtExpires",
+      "message": "Enter the JWT expires duration",
+      "default": "7d"
+    }
+  ],
+  "files": {
+    "add": [
+      "src/auth/**/*"
+    ],
+    "merge": [
+      "src/app.*.ts",
+      ".apprc.ts",
+      "package.json"
+    ]
+  }
+}
